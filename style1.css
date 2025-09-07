@@ -1,0 +1,43 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+        font-size: 16px;
+        padding: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    background-color: rgb(94, 153, 205);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 0%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid chartreuse;
+    border-radius: 1px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+

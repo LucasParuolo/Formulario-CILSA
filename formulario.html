@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="estilo" rel="stylesheet" href="style1.css">
+    <title>Formulario</title>
+</head>
+<body>
+  <h2>Formulario de Registro</h2>
+    <section id="main section">
+        <div id="mi-formulario" class="section">
+             <form
+          action="/controlador-registro"
+          method="POST"
+          class="form-registro"
+          id="form-registro"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input
+              type="text"
+              class="input input-text"
+              name="nombre"
+              required
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Apellido">Apellido</label>
+            <input
+              type="text"
+              class="input input-text"
+              name="apellido"
+              required
+              placeholder="Apellido"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Mail">Email</label>
+            <input
+              type="mail"
+              class="input"
+              name="mail"
+              required
+              placeholder=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input
+              type="date"
+              name="fecha-inicio"
+              min="1950-01-01"
+              max="2020-06-20"
+            />
+          </div>
+          <div class="form-group">
+            <label for="pais">País</label>
+            <select name="pais" id="pais" class="input">
+              <option value="arg">ARG</option>
+              <option value="chi">CHI</option>
+              <option value="brz">BRZ</option>
+            </select>
+          </div>
+          
+          
+
+          <button type="submit" class="link btn">Registrarme</button>
+          <button type="style1" onclick="cambiarEstilo('style1.css')">Estilo Normal</button>
+          <button type="style2" onclick="cambiarEstilo('style2.css')">Estilo Empresarial</button>
+        </form>
+        </div>
+    </section>
+    <script src="confirm.js"></script>
+    <script>
+    function cambiarEstilo(archivo) {
+      document.getElementById('estilo').setAttribute('href', archivo);
+    }
+  </script>
+</body>
+</html>
