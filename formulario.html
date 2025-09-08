@@ -25,6 +25,8 @@
               name="nombre"
               required
               placeholder="Nombre"
+              pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"
+              title="Por favor, escriba un nombre real"
             />
           </div>
           <div class="form-group">
@@ -35,16 +37,20 @@
               name="apellido"
               required
               placeholder="Apellido"
+              pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"
+              title="Por favor, escriba un nombre real"
             />
           </div>
           <div class="form-group">
             <label for="Mail">Email</label>
             <input
-              type="mail"
+              type="email"
               class="input"
               name="mail"
               required
-              placeholder=""
+              placeholder="ejemplo@correo.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(com|org|net)$"
+              title="Por favor, introduzca un email valido"
             />
           </div>
           <div class="form-group">
@@ -62,6 +68,9 @@
               <option value="arg">ARG</option>
               <option value="chi">CHI</option>
               <option value="brz">BRZ</option>
+              <option value="bol">BOL</option>
+              <option value="uss">USS</option>
+              <option value="uk">UK</option>
             </select>
           </div>
           
